@@ -20,8 +20,8 @@ const Header = () => {
             </Navbar.Collapse> :
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto"></Nav>
-                    {user.userRole == 0 && <Link to="/postjob" style={{ color: 'white', marginRight: 35 }} className={location.pathname === "/postjob" && 'active_style'}>Post a job</Link>}
-                    {user.userRole == 1 && <Link to="/appliedjobs" style={{ color: 'white', marginRight: 35 }} className={location.pathname === "/appliedjobs" && 'active_style'}>Applied jobs</Link>}
+                    {user.userRole === 0 && <Link to="/postjob" style={{ color: 'white', marginRight: 35 }} className={location.pathname === "/postjob" && 'active_style'}>Post a job</Link>}
+                    {user.userRole === 1 && <Link to="/appliedjobs" style={{ color: 'white', marginRight: 35 }} className={location.pathname === "/appliedjobs" && 'active_style'}>Applied jobs</Link>}
                     <Link to="/dashboard" className="profile_button_div">
                         <div style={{ display: 'flex', alignItems: 'center' }}>
                             <span className="profile_icon">{user.name.slice(0, 1)}</span>

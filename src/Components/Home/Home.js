@@ -45,7 +45,7 @@ function Home() {
                 <div className="row pb-4">
                     {Constants.partners.map((item, index) => (<div className="col-md-3 my-2">
                         <div>
-                            <img src={partner} width="100%" />
+                            <img src={partner} width="100%" alt="partnerImage" />
                         </div>
                     </div>))}
                 </div>

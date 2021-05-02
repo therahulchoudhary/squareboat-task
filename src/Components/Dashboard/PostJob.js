@@ -4,12 +4,10 @@ import '../../CSS/main.css';
 import { isEmpty } from 'lodash';
 import { postJob } from '../../Service/Service';
 import { Toast } from 'primereact/toast';
-import { useHistory } from 'react-router-dom';
 
 const PostJob = () => {
     const user = JSON.parse(sessionStorage.getItem('userData'));
     const toast = React.useRef();
-    const history = useHistory();
     const [jobData, setJobData] = React.useState({
         title: '',
         description: '',

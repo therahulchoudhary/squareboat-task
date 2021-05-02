@@ -8,8 +8,6 @@ import { Toast } from 'primereact/toast';
 const CandidateDashboard = () => {
     const location = useLocation();
     const userData = JSON.parse(sessionStorage.getItem('userData'));
-    const [show, setShow] = React.useState(false);
-    const handleClose = () => setShow(false);
     const [jobsData, setJobsData] = React.useState({ data: [] });
     const toast = React.useRef();
     React.useEffect(() => {
@@ -30,7 +28,6 @@ const CandidateDashboard = () => {
             console.log(error)
             toast.current.show({ severity: 'error', summary: 'You have already applied for this job.' })
         })
-        setShow(true)
     }
 
     return (
