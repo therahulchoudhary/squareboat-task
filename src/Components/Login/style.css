@@ -1,0 +1,6 @@
+.login_main_container {
+    /* background-color: #EDF6FF; */
+    display: flex;
+    height: 100vh;
+    background:linear-gradient(180deg, #303F60 35%, #EDF6FF 10%);
+}

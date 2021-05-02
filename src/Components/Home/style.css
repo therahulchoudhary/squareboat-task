@@ -1,0 +1,39 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); */
+.main_container {
+    margin:10px auto;
+    background-color: #EDF6FF;
+}
+.welcome_container {
+    background: #303F60;
+    color: white;
+    margin-bottom: 60px;
+}
+.welcome_heading {
+    font-size: 60px;
+    line-height: 74px;
+}
+.why_us_heading {
+    color:#303f60;
+}
+.banner_image {
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    width: 100%;
+    box-shadow: 0px 30px 36px #557DA526;
+}
+.service_card {
+    background-color: white;
+    box-shadow: 0 3px 6px #557DA526;
+    border-radius: 5px;
+}
+.service_card_heading {
+    font-size: 20px;
+    color:#43AFFF;
+    font-weight: 500;
+    width: 50%;
+}
+.service_card_details {
+    font-size: 14px;
+    margin:0;
+}
